@@ -1,16 +1,18 @@
 version: '3.8'
 
 services:
-  # api
-  
+  # api:
+  #   depends_on: mongo
 
-  # mongo
-  image: mongo
-  restart: always
-  environment:
-    - MONG_INITDB_ROOT_USERNAME: ${MONGO_USERNAME} 
-    - MONG_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
-  volumes:
-    - ./mongo/mongo-data:/data/db
-  ports:
-    - ${MONGO_LOCAL_PORT}:${MONGO_CONTAINER_PORT}
+  mongo:
+    image: mongo
+    restart: ${MONGO_RESTART_POLICY}
+    environment:
+      - MONG_INITDB_ROOT_USERNAME=${MONGO_USERNAME} 
+      - MONG_INITDB_ROOT_PASSWORD=${MONGO_PASSWORD}
+    volumes:
+      - ${MONGO_LOCAL_VOLUME}:${MONGO_CONTAINER_VOLUME}
+    ports:
+      - ${MONGO_LOCAL_PORT}:${MONGO_CONTAINER_PORT}
+    profiles:
+      - db

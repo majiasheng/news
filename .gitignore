@@ -18,7 +18,7 @@ assets/
 .env
 api_key
 secrets.py
-mongo/*
+container_volumes/*
 
 # misc
 scratchpad.md

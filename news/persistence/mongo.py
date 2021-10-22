@@ -8,4 +8,4 @@ conn_str = ("mongodb://"
     f"{os.getenv('MONGO_HOST')}{os.getenv('MONGO_PORT')}"
 )
 
-db = pymongo.MongoClient(conn_str)
+client = pymongo.MongoClient(conn_str)
