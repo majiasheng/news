@@ -1,0 +1,24 @@
+# system
+.DS_Store
+
+# python
+__pycache__/
+*/__pycache__/
+venv/
+
+# editor
+.vscode/
+
+# build
+dist/
+build/
+
+# app
+assets/
+.env
+api_key
+secrets.py
+mongo/*
+
+# misc
+scratchpad.md
