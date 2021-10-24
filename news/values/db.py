@@ -1,0 +1,2 @@
+NEWS_DATABASE = 'news'
+HEADLINES_COLLECTION = 'headlines'

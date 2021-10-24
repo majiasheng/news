@@ -53,7 +53,7 @@ US = 'us'
 VE = 've'
 ZA = 'za'
 
-ALL_COUNTRIES = [
+all = [
     AE,
     AR,
     AT,
