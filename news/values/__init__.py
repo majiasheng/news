@@ -1,6 +1,6 @@
-import .categories
-import .common
-import .countries
-import .languages
-import .sources
-import .db
+from . import categories
+from . import common
+from . import countries
+from . import languages
+from . import sources
+from . import db

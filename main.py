@@ -1,15 +1,11 @@
-from news.news import get_top_general_headlines
+from news.news import fetch_and_save_all_headlines
 from dotenv import load_dotenv
 
 load_dotenv()
 
-import pdb
-pdb.set_trace()
+
 def main():
-    # top_general_headlines = get_top_general_headlines()
-    import pdb
-    pdb.set_trace()
-    # print(top_general_headlines)
+    fetch_and_save_all_headlines()
 
 
 if __name__ == '__main__':

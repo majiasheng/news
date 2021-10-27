@@ -53,7 +53,7 @@ US = 'us'
 VE = 've'
 ZA = 'za'
 
-all = [
+ALL = [
     AE,
     AR,
     AT,

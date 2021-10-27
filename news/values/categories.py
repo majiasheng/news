@@ -6,7 +6,7 @@ SCIENCE = 'science'
 SPORTS = 'sports'
 TECHNOLOGY = 'technology'
 
-all = [
+ALL = [
     BUSINESS,
     ENTERTAINMENT,
     GENERAL,
